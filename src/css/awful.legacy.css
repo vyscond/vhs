@@ -1,0 +1,537 @@
+
+/* in theory it helps render font  */
+
+*
+{ 
+    -webkit-font-smoothing : antialiased;
+       -moz-font-smoothing : antialiased;
+        -ms-font-smoothing : antialiased;
+         -o-font-smoothing : antialiased;
+            font-smoothing : antialiased;
+}
+
+/* This is for firefox (the browser which doesn't set width/height correctly) */
+
+html , body
+{
+    width  : 100%;
+    height : 100%;
+}
+
+body 
+{
+    margin : 0px;
+}
+
+
+/* Common properties */
+
+.width-100 , .stretch , .horizontal_line , .soft_horizontal_line , .floatbar
+{
+	width : 100%;
+}
+
+.height-100 , .stretch , .vertical_line
+{
+    height : 100%;
+}
+
+.width-90 , .stretch-90
+{
+	width : 90%;
+}
+
+.height-90 , .stretch-90
+{
+    height : 90%;
+}
+
+.vertical_margins_ondemand 
+{
+    margin-top    : auto;
+    margin-bottom : auto;
+}
+
+.horinzotal_margins_ondemand 
+{
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+/* --- Flex Styles --- */
+
+.row , .column , .center , .shelf , .brickwall
+{    
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: flex; 
+}
+
+.center
+{
+	/* Standard */
+	justify-content  : center;
+    align-items      : center;
+	
+	/* IE 10 */
+	-ms-flex-pack  : center; /* justify-content */
+    -ms-flex-align : center; /* align-items */
+    
+    -webkit-box-pack  : center; /* justify-content */
+	-webkit-box-align : center; /* align-items */
+}
+
+.center_h
+{
+	/* Standard */
+    align-items       : center;
+    -ms-flex-align    : center; /* align-items */
+    -webkit-box-align : center; /* align-items */
+}
+
+.spaced
+{
+
+	/* Standard */
+	justify-content  : space-between;
+	-ms-flex-pack    : justify;
+	-webkit-box-pack : justify;
+}
+
+.spaced_around
+{
+
+	/* Standard */
+	justify-content  : space-around;
+	-ms-flex-pack    : space-around; /* probabilly not working */
+	-webkit-box-pack : space-around; /* probabilly not working */
+	-webkit-justify-content : space-around;
+}
+
+.row
+{
+    flex-direction     : row;
+    flex-wrap          : nowrap;
+    
+    -ms-flex-direction : row;
+    -ms-flex-wrap      : nowrap;
+	
+	-webkit-box-lines  : single;
+	-webkit-box-orient : horizontal;
+}
+
+.column
+{
+	/* - Standard - */
+    flex-direction     : column;
+    flex-wrap          : nowrap;
+    
+    -ms-flex-direction : column;
+    -ms-flex-wrap      : nowrap;
+	
+	-webkit-box-lines  : single;
+	-webkit-box-orient : vertical;
+}
+
+.brickwall
+{
+    flex-direction : row;
+    flex-wrap      : wrap;
+    
+    -ms-flex-direction : row;
+    -ms-flex-wrap      : wrap;
+    
+    -moz-flex-direction : row;
+    -moz-flex-wrap      : wrap;
+    
+    -webkit-box-lines  : multiple;
+	-webkit-box-orient : horizontal;
+}
+
+.shelf
+{
+    
+    align-items     : flex-start ;
+    align-content   : flex-start ;
+    justify-content : flex-start ;
+    
+    /* IE 10 */
+	-ms-flex-pack  : flex-start ; /* justify-content */
+    -ms-flex-align : flex-start ; /* align-items */
+    
+    -webkit-box-pack  : flex-start ; /* justify-content */
+	-webkit-box-align : flex-start ; /* align-items */
+}
+
+/* --- Misc --- */
+
+.unscrollable
+{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.fitscreen_wallpaper
+{
+    /*
+        on the target div put the picture with :
+        background-image: url(../pics/clouds1.jpg); 
+    */  
+    
+    background-repeat     : no-repeat;
+    background-attachment : fixed;
+    background-position   : center;
+    
+    -webkit-background-size : cover;
+    -moz-background-size    : cover;
+    -o-background-size      : cover;
+    background-size         : cover;
+    opacity : 0.9;
+}
+
+
+/* Basic overlays */
+
+.dark_overlay_low
+{
+    -webkit-background-color : rgba(0,0,0,0.2);
+    background-color         : rgba(0,0,0,0.2);
+}
+
+.dark_overlay_medium
+{
+    -webkit-background-color : rgba(0,0,0,0.5);
+    background-color         : rgba(0,0,0,0.5);
+}
+
+.dark_overlay_high
+{
+    -webkit-background-color : rgba(0,0,0,0.8);
+    background-color         : rgba(0,0,0,0.8);
+}
+
+.light_overlay_low
+{
+    -webkit-background-color : rgba(255,255,255,0.2);
+    background-color         : rgba(255,255,255,0.2);
+}
+
+.light_overlay_medium
+{
+    -webkit-background-color : rgba(255,255,255,0.5);
+    background-color         : rgba(255,255,255,0.5);
+}
+
+.light_overlay_high
+{
+    -webkit-background-color : rgba(255,255,255,0.8);
+    background-color         : rgba(255,255,255,0.8);
+}
+
+.softmargin{ /* already forgot why using this .-. */
+    
+    -webkit-box-sizing : border-box;
+       -moz-box-sizing : border-box;
+        -ms-box-sizing : border-box;
+         -o-box-sizing : border-box;
+            box-sizing : border-box;
+}
+
+.rounded_corners_low
+{
+	border-top-right-radius           : 2.5px;
+	border-bottom-right-radius        : 2.5px;
+    border-top-left-radius            : 2.5px;
+    border-bottom-left-radius         : 2.5px;
+    border-radius-topright            : 2.5px;
+    border-radius-bottomright         : 2.5px;
+    border-radius-topleft             : 2.5px;
+    border-radius-bottomleft          : 2.5px;
+    -o-border-radius-topright         : 2.5px;
+    -o-border-radius-bottomright      : 2.5px;
+    -o-border-radius-topleft          : 2.5px;
+    -o-border-radius-bottomleft       : 2.5px;
+    -ms-border-radius-topright        : 2.5px;
+    -ms-border-radius-bottomright     : 2.5px;
+    -ms-border-radius-topleft         : 2.5px;
+    -ms-border-radius-bottomleft      : 2.5px;
+    -moz-border-radius-topright       : 2.5px;
+    -moz-border-radius-bottomright    : 2.5px;
+    -moz-border-radius-topleft        : 2.5px;
+    -moz-border-radius-bottomleft     : 2.5px;
+	-webkit-border-radius-topright    : 2.5px;
+	-webkit-border-radius-bottomright : 2.5px;
+	-webkit-border-radius-topleft     : 2.5px;
+	-webkit-border-radius-bottomletf  : 2.5px;
+}
+
+.rounded_corners_medium
+{
+	border-top-right-radius    : 5.0px;
+	border-bottom-right-radius : 5.0px;
+    border-top-left-radius     : 5.0px;
+    border-bottom-left-radius  : 5.0px;
+
+    border-radius-topright    : 5.0px;
+    border-radius-bottomright : 5.0px;
+    border-radius-topleft     : 5.0px;
+    border-radius-bottomleft  : 5.0px;
+    
+    -o-border-radius-topright    : 5.0px;
+    -o-border-radius-bottomright : 5.0px;
+    -o-border-radius-topleft     : 5.0px;
+    -o-border-radius-bottomleft  : 5.0px;
+    
+    -ms-border-radius-topright    : 5.0px;
+    -ms-border-radius-bottomright : 5.0px;
+    -ms-border-radius-topleft     : 5.0px;
+    -ms-border-radius-bottomleft  : 5.0px;
+    
+    -moz-border-radius-topright    : 5.0px;
+    -moz-border-radius-bottomright : 5.0px;
+    -moz-border-radius-topleft     : 5.0px;
+    -moz-border-radius-bottomleft  : 5.0px;
+	
+	-webkit-border-radius-topright    : 5.0px;
+	-webkit-border-radius-bottomright : 5.0px;
+	-webkit-border-radius-topleft     : 5.0px;
+	-webkit-border-radius-bottomletf  : 5.0px;
+}
+
+.rounded_corners_high
+{
+	border-top-right-radius    :10.0px;
+	border-bottom-right-radius :10.0px;
+    border-top-left-radius     :10.0px;
+    border-bottom-left-radius  :10.0px;
+
+    border-radius-topright    :10.0px;
+    border-radius-bottomright :10.0px;
+    border-radius-topleft     :10.0px;
+    border-radius-bottomleft  :10.0px;
+    
+    -o-border-radius-topright    :10.0px;
+    -o-border-radius-bottomright :10.0px;
+    -o-border-radius-topleft     :10.0px;
+    -o-border-radius-bottomleft  :10.0px;
+    
+    -ms-border-radius-topright    :10.0px;
+    -ms-border-radius-bottomright :10.0px;
+    -ms-border-radius-topleft     :10.0px;
+    -ms-border-radius-bottomleft  :10.0px;
+    
+    -moz-border-radius-topright    :10.0px;
+    -moz-border-radius-bottomright :10.0px;
+    -moz-border-radius-topleft     :10.0px;
+    -moz-border-radius-bottomleft  :10.0px;
+	
+	-webkit-border-radius-topright    :10.0px;
+	-webkit-border-radius-bottomright :10.0px;
+	-webkit-border-radius-topleft     :10.0px;
+	-webkit-border-radius-bottomletf  :10.0px;
+}
+
+.soft_horizontal_line
+{
+    -moz-border-radius-bottomleft : 50% 200%;
+    -moz-border-radius-topleft    : 50% 200%;
+    -moz-border-radius-bottomright: 50% 200%;
+    -moz-border-radius-topright   : 50% 200%;
+    
+    -ms-border-radius-topright    :50% 200%;
+    -ms-border-radius-bottomright :50% 200%;
+    -ms-border-radius-topleft     :50% 200%;
+    -ms-border-radius-bottomleft  :50% 200%;
+    
+    -webkit-border-radius-topright    :50% 200%;
+	-webkit-border-radius-bottomright :50% 200%;
+	-webkit-border-radius-topleft     :50% 200%;
+	-webkit-border-radius-bottomletf  :50% 200%;
+    
+    border-bottom-left-radius     : 50% 200%;
+    border-top-left-radius        : 50% 200%;
+    border-top-right-radius       : 50% 200%;
+    border-bottom-right-radius    : 50% 200%;
+    
+    border-radius-topright    :50% 200%;
+    border-radius-bottomright :50% 200%;
+    border-radius-topleft     :50% 200%;
+    border-radius-bottomleft  :50% 200%;
+    
+    height : 2px;
+}
+
+.circle , .avatar_circle
+{
+    border-radius: 50%;
+}
+
+.avatar_circle
+{
+    background-position : center center;
+    background-repeat : no-repeat;
+}
+
+.clickable
+{
+    cursor : pointer;
+}
+
+.dark_shadow_low
+{
+    -moz-box-shadow    : 0 0 15px rgba(0,0,0,0.5);
+    -webkit-box-shadow : 0 0 15px rgba(0,0,0,0.5);
+    box-shadow         : 0 0 15px rgba(0,0,0,0.5);
+}
+
+.low_dark_shadow_onhover:hover 
+{
+    -moz-box-shadow    : 0 0 15px rgba(0,0,0,0.5);
+    -webkit-box-shadow : 0 0 15px rgba(0,0,0,0.5);
+    box-shadow         : 0 0 15px rgba(0,0,0,0.5);
+}
+
+.dark_shadow_medium
+{
+    -moz-box-shadow    : 0 0 15px rgba(0,0,0,1.5);
+    -webkit-box-shadow : 0 0 15px rgba(0,0,0,1.5);
+    box-shadow         : 0 0 15px rgba(0,0,0,1.5);
+}
+
+.dark_shadow_medium_onhover:hover 
+{
+    -moz-box-shadow    : 0 0 15px rgba(0,0,0,1.5);
+    -webkit-box-shadow : 0 0 15px rgba(0,0,0,1.5);
+    box-shadow         : 0 0 15px rgba(0,0,0,1.5);
+}
+
+.dark_shadow_high
+{
+    -moz-box-shadow    : 0 0 15px rgba(0,0,0,2.5);
+    -webkit-box-shadow : 0 0 15px rgba(0,0,0,2.5);
+    box-shadow         : 0 0 15px rgba(0,0,0,2.5);
+}
+
+.dark_shadow_high_onhover:hover 
+{
+    -moz-box-shadow    : 0 0 15px rgba(0,0,0,2.5);
+    -webkit-box-shadow : 0 0 15px rgba(0,0,0,2.5);
+    box-shadow         : 0 0 15px rgba(0,0,0,2.5);
+}
+
+.light_shadow_high_onhover:hover 
+{
+    -moz-box-shadow    : 0 0 15px rgba(255,255,255,2.5);
+    -webkit-box-shadow : 0 0 15px rgba(255,255,255,2.5);
+    box-shadow         : 0 0 15px rgba(255,255,255,2.5);
+}
+
+.light_shadow_high
+{
+    -moz-box-shadow    : 0 0 15px rgba(255,255,255,2.5);
+    -webkit-box-shadow : 0 0 15px rgba(255,255,255,2.5);
+    box-shadow         : 0 0 15px rgba(255,255,255,2.5);
+}
+
+/* --- Text --- */
+
+.text_wrap
+{
+    -webkit-box-lines : multiple ;
+       -moz-box-lines : multiple ;
+        -ms-box-lines : multiple ;
+            box-lines : multiple ;
+    
+    -webkit-flex-wrap : wrap;
+       -moz-flex-wrap : wrap;
+        -ms-flex-wrap : wrap;
+            flex-wrap : wrap;
+}
+
+.text_justify
+{
+	text-align : justify;
+}
+
+.text_shadow_light_low
+{
+	text-shadow: 0 0 15px white;
+}
+
+.text_shadow_light_medium
+{
+	text-shadow: 0 0 35px white;
+}
+
+.text_shadow_light_high
+{
+	text-shadow: 0 0 55px white;
+}
+
+.text_shadow_light_low_onhover:hover
+{
+	text-shadow: 0 0 15px white;
+}
+
+.text_shadow_light_medium_onhover:hover
+{
+	text-shadow: 0 0 35px white;
+}
+
+.text_shadow_light_high_onhover:hover
+{
+	text-shadow: 0 0 55px white;
+}
+
+textarea.elegant
+{
+    wrap    : soft;
+    border  : none;
+    outline : none;
+    resize  : none;
+    width   : 100%;
+    height  : 100%;
+    color   : #1c1c1c;        /* this can (must) be overwrited on css pages */
+    background-color : white; /* this can (must) be overwrited on css pages */
+}
+
+.disable_selection
+{
+    -webkit-touch-callout : none;
+      -webkit-user-select : none;
+       -khtml-user-select : none;
+         -moz-user-select : none;
+          -ms-user-select : none;
+              user-select : none;
+}
+
+.floatbar
+{
+	position : fixed ;
+}
+
+::-webkit-scrollbar {
+    width  : 8px;
+    height : 8px;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece 
+{
+    background : #fcfcfc;
+}
+      
+::-webkit-scrollbar-thumb 
+{
+    background : #1c1c1c;
+    
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.3); 
+}

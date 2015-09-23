@@ -1,0 +1,40 @@
+
+.dark-shadow-95{ box-shadow 0 0 15px #000000F2; }
+.dark-shadow-90{ box-shadow 0 0 15px #000000E6; }
+.dark-shadow-85{ box-shadow 0 0 15px #000000D9; }
+.dark-shadow-80{ box-shadow 0 0 15px #000000CC; }
+.dark-shadow-75{ box-shadow 0 0 15px #000000BF; }
+.dark-shadow-70{ box-shadow 0 0 15px #000000B3; }
+.dark-shadow-65{ box-shadow 0 0 15px #000000A6; }
+.dark-shadow-60{ box-shadow 0 0 15px #00000099; }
+.dark-shadow-55{ box-shadow 0 0 15px #0000008C; }
+.dark-shadow-50{ box-shadow 0 0 15px #00000080; }
+.dark-shadow-45{ box-shadow 0 0 15px #00000073; }
+.dark-shadow-40{ box-shadow 0 0 15px #00000066; }
+.dark-shadow-35{ box-shadow 0 0 15px #00000059; }
+.dark-shadow-30{ box-shadow 0 0 15px #0000004D; }
+.dark-shadow-25{ box-shadow 0 0 15px #00000040; }
+.dark-shadow-20{ box-shadow 0 0 15px #00000033; }
+.dark-shadow-15{ box-shadow 0 0 15px #00000026; }
+.dark-shadow-10{ box-shadow 0 0 15px #0000001A; }
+.dark-shadow-5 { box-shadow 0 0 15px #0000000D; }
+
+.light-shadow-95{ box-shadow 0 0 15px #000000F2; }
+.light-shadow-90{ box-shadow 0 0 15px #000000E6; }
+.light-shadow-85{ box-shadow 0 0 15px #000000D9; }
+.light-shadow-80{ box-shadow 0 0 15px #000000CC; }
+.light-shadow-75{ box-shadow 0 0 15px #000000BF; }
+.light-shadow-70{ box-shadow 0 0 15px #000000B3; }
+.light-shadow-65{ box-shadow 0 0 15px #000000A6; }
+.light-shadow-60{ box-shadow 0 0 15px #00000099; }
+.light-shadow-55{ box-shadow 0 0 15px #0000008C; }
+.light-shadow-50{ box-shadow 0 0 15px #00000080; }
+.light-shadow-45{ box-shadow 0 0 15px #00000073; }
+.light-shadow-40{ box-shadow 0 0 15px #00000066; }
+.light-shadow-35{ box-shadow 0 0 15px #00000059; }
+.light-shadow-30{ box-shadow 0 0 15px #0000004D; }
+.light-shadow-25{ box-shadow 0 0 15px #00000040; }
+.light-shadow-20{ box-shadow 0 0 15px #00000033; }
+.light-shadow-15{ box-shadow 0 0 15px #00000026; }
+.light-shadow-10{ box-shadow 0 0 15px #0000001A; }
+.light-shadow-5 { box-shadow 0 0 15px #0000000D; }

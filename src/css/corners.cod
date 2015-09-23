@@ -1,0 +1,38 @@
+@cod-defines {
+    small 2.5p
+    medium 5.0p
+    large 10p
+}
+
+.border-radius-small{
+    border-top-right-radius    small;
+    border-bottom-right-radius small;
+    border-top-left-radius     small;
+    border-bottom-left-radius  small;
+    border-radius-topright     small;
+    border-radius-bottomright  small;
+    border-radius-topleft      small;
+    border-radius-bottomleft   small;
+}
+
+.border-radius-medium{
+    border-top-right-radius    medium;
+    border-bottom-right-radius medium;
+    border-top-left-radius     medium;
+    border-bottom-left-radius  medium;
+    border-radius-topright     medium;
+    border-radius-bottomright  medium;
+    border-radius-topleft      medium;
+    border-radius-bottomleft   medium;
+}
+
+.border-radius-large{
+    border-top-right-radius    large;
+    border-bottom-right-radius large;
+    border-top-left-radius     large;
+    border-bottom-left-radius  large;
+    border-radius-topright     large;
+    border-radius-bottomright  large;
+    border-radius-topleft      large;
+    border-radius-bottomleft   large;
+}

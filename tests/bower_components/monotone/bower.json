@@ -1,0 +1,27 @@
+{
+  "name": "monotone",
+  "version": "0.0.0",
+  "main": [
+    "./dist/css/monotone.css",
+    "./dist/js/monotone.js"
+  ],
+  "homepage": "https://github.com/vyscond/monotone",
+  "authors": [
+    "vyscond <vyscond@gmail.com>"
+  ],
+  "description": "A little collection of helpers not include on most of the popular CSS frameworks",
+  "keywords": [
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "cod",
+    "docs",
+    "Makefile"
+  ]
+}

@@ -1,0 +1,94 @@
+ul{
+    padding: 0;
+    list-style: none;
+}
+ul li{
+    float: left;
+    width: 100px;
+    text-align: center;
+    line-height: 21px;
+}
+ul li a{
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+    background: #f2f2f2;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: #fff;
+    background: #939393;
+}
+ul li ul{
+    display: none;
+}
+ul li:hover ul{
+    display: block; /* display the dropdown */
+}
+
+.aw-nav
+{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: flex; 
+}
+
+.aw-nav /* row */
+{
+    flex-direction     : row;
+    flex-wrap          : nowrap;
+    
+    -ms-flex-direction : row;
+    -ms-flex-wrap      : nowrap;
+	
+	-webkit-box-lines  : single;
+	-webkit-box-orient : horizontal;
+
+    justify-content   : center;
+    align-items       : center;
+    -ms-flex-pack     : center;
+    -webkit-box-align : center;
+    
+
+}
+
+.aw-dropdown /* column */
+{
+	/* - Standard - */
+    flex-direction     : column;
+    flex-wrap          : nowrap;
+    
+    -ms-flex-direction : column;
+    -ms-flex-wrap      : nowrap;
+	
+	-webkit-box-lines  : single;
+	-webkit-box-orient : vertical;
+}
+
+/* FlexBox Horizontal Align 
+ * 
+ * aw-align-[horizontal]-[vertical]
+ * 
+ * */
+
+.aw-right ,
+.aw-right-top ,
+.aw-right-center ,
+.aw-right-bottom
+{
+    justify-content   : flex-start;
+    -ms-flex-pack     : flex-start;
+    -webkit-box-align : flex-start;
+}
+
+.aw-center ,
+.aw-center-top ,
+.aw-center-center ,
+.aw-center-bottom
+ {
+        -ms-flex-align    : center;
+    -webkit-box-align : center;
+}
+

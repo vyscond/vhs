@@ -1,0 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Armata);
+
+.gf-armata{
+    font-family: 'Armata', sans-serif;
+}
+
+.gf-armata-b{
+    font-family: 'Armata', sans-serif;
+    font-weight: 700;
+}

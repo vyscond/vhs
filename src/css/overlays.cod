@@ -1,0 +1,40 @@
+
+.dark-overley-95{ bac #000000F2; }
+.dark-overley-90{ bac #000000E6; }
+.dark-overley-85{ bac #000000D9; }
+.dark-overley-80{ bac #000000CC; }
+.dark-overley-75{ bac #000000BF; }
+.dark-overley-70{ bac #000000B3; }
+.dark-overley-65{ bac #000000A6; }
+.dark-overley-60{ bac #00000099; }
+.dark-overley-55{ bac #0000008C; }
+.dark-overley-50{ bac #00000080; }
+.dark-overley-45{ bac #00000073; }
+.dark-overley-40{ bac #00000066; }
+.dark-overley-35{ bac #00000059; }
+.dark-overley-30{ bac #0000004D; }
+.dark-overley-25{ bac #00000040; }
+.dark-overley-20{ bac #00000033; }
+.dark-overley-15{ bac #00000026; }
+.dark-overley-10{ bac #0000001A; }
+.dark-overley-5 { bac #0000000D; }
+
+.light-overley-95{ bac #ffffffF2; }
+.light-overley-90{ bac #ffffffE6; }
+.light-overley-85{ bac #ffffffD9; }
+.light-overley-80{ bac #ffffffCC; }
+.light-overley-75{ bac #ffffffBF; }
+.light-overley-70{ bac #ffffffB3; }
+.light-overley-65{ bac #ffffffA6; }
+.light-overley-60{ bac #ffffff99; }
+.light-overley-55{ bac #ffffff8C; }
+.light-overley-50{ bac #ffffff80; }
+.light-overley-45{ bac #ffffff73; }
+.light-overley-40{ bac #ffffff66; }
+.light-overley-35{ bac #ffffff59; }
+.light-overley-30{ bac #ffffff4D; }
+.light-overley-25{ bac #ffffff40; }
+.light-overley-20{ bac #ffffff33; }
+.light-overley-15{ bac #ffffff26; }
+.light-overley-10{ bac #ffffff1A; }
+.light-overley-5 { bac #ffffff0D; }

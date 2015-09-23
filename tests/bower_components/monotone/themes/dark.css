@@ -1,0 +1,22 @@
+
+body {
+    background: black;
+    color: white;
+}
+
+.aw-shore{
+    background: #1c1c1c;
+    color: #E4E5E8;
+}
+
+.aw-btn-p ,.aw-btn-p:active , .aw-btn-p:visited { color: #E4E5E8; background-image: linear-gradient(to bottom, #3cb0fd, #3498db); }
+.aw-btn-i ,.aw-btn-i:active , .aw-btn-i:visited { color: #E4E5E8; background-image: linear-gradient(to bottom, #3cb0fd, #3498db); }
+.aw-btn-s ,.aw-btn-s:active , .aw-btn-s:visited { color: #E4E5E8; background-image: linear-gradient(to bottom, #3cb0fd, #3498db); }
+.aw-btn-w ,.aw-btn-w:active , .aw-btn-w:visited { color: #E4E5E8; background-image: linear-gradient(to bottom, #3cb0fd, #3498db); }
+.aw-btn-d ,.aw-btn-d:active , .aw-btn-d:visited { color: #E4E5E8; background-image: linear-gradient(to bottom, #3cb0fd, #3498db); }
+
+/*.aw-btn-i:hover { color: #E4E5E8; background-image: linear-gradient(to bottom, #3cb0fd, #3498db); }*/
+.aw-btn-i:hover { color: #E4E5E8; border: 4px linear-gradient(to bottom, #3cb0fd, #3498db) solid; height: 200px;}
+.aw-btn-s:hover { color: #E4E5E8; background-image: linear-gradient(to bottom, #3cb0fd, #3498db); }
+.aw-btn-w:hover { color: #E4E5E8; background-image: linear-gradient(to bottom, #3cb0fd, #3498db); }
+.aw-btn-d:hover { color: #E4E5E8; background-image: linear-gradient(to bottom, #3cb0fd, #3498db); }

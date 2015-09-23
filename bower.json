@@ -1,0 +1,26 @@
+{
+  "name": "vhs",
+  "version": "0.0.0",
+  "main": [
+    "./dist/css/vhs.css",
+    "./dist/js/vhs.js"
+  ],
+  "homepage": "https://github.com/vyscond/vhs",
+  "authors": [
+    "vyscond <vyscond@gmail.com>"
+  ],
+  "description": "A little collection of helpers not include on most of the popular CSS frameworks",
+  "keywords": [
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "cod",
+    "Makefile"
+  ]
+}
