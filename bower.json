@@ -21,6 +21,8 @@
     "test",
     "tests",
     "cod",
-    "Makefile"
+    "src",
+    "Makefile",
+    "README.md"
   ]
 }
