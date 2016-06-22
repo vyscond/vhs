@@ -1,0 +1,72 @@
+
+.vhs-1  { width:   10%; }
+.vhs-2  { width:   20%; }
+.vhs-3  { width:   30%; }
+.vhs-4  { width:   40%; }
+.vhs-5  { width:   50%; }
+.vhs-6  { width:   60%; }
+.vhs-7  { width:   70%; }
+.vhs-8  { width:   80%; }
+.vhs-9  { width:   90%; }
+.vhs-10 { width:  100%; }
+
+@media only screen and (max-width : 400px) {
+  /* 100/10 */
+  .vhs-1-sx  { width:   10%; }
+  .vhs-2-sx  { width:   20%; }
+  .vhs-3-sx  { width:   30%; }
+  .vhs-4-sx  { width:   40%; }
+  .vhs-5-sx  { width:   50%; }
+  .vhs-6-sx  { width:   60%; }
+  .vhs-7-sx  { width:   70%; }
+  .vhs-8-sx  { width:   80%; }
+  .vhs-9-sx  { width:   90%; }
+  .vhs-10-sx { width:  100%; }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width : 400px) and (max-width : 800px) {
+  .vhs-1-sm   { width:   10%; }
+  .vhs-2-sm   { width:   20%; }
+  .vhs-3-sm   { width:   30%; }
+  .vhs-4-sm   { width:   40%; }
+  .vhs-5-sm   { width:   50%; }
+  .vhs-6-sm   { width:   60%; }
+  .vhs-7-sm   { width:   70%; }
+  .vhs-8-sm   { width:   80%; }
+  .vhs-9-sm   { width:   90%; }
+  .vhs-10-sm  { width:  100%; }
+}
+
+/* iPads (portrait) , Desktops and laptops ----------- */
+@media only screen and (min-width : 800px) and (max-width : 1824px) {
+    .vhs-1-md   { width:   10%; }
+    .vhs-2-md   { width:   20%; }
+    .vhs-3-md   { width:   30%; }
+    .vhs-4-md   { width:   40%; }
+    .vhs-5-md   { width:   50%; }
+    .vhs-6-md   { width:   60%; }
+    .vhs-7-md   { width:   70%; }
+    .vhs-8-md   { width:   80%; }
+    .vhs-9-md   { width:   90%; }
+    .vhs-10-md  { width:  100%; }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    .vhs-1-lg   { width:   10%; }
+    .vhs-2-lg   { width:   20%; }
+    .vhs-3-lg   { width:   30%; }
+    .vhs-4-lg   { width:   40%; }
+    .vhs-5-lg   { width:   50%; }
+    .vhs-6-lg   { width:   60%; }
+    .vhs-7-lg   { width:   70%; }
+    .vhs-8-lg   { width:   80%; }
+    .vhs-9-lg   { width:   90%; }
+    .vhs-10-lg  { width:  100%; }
+}
+
+/* iPhone 4 ----------- */
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+}
